@@ -43,7 +43,7 @@ jobs:
     # Password or personal access token used to log against the Docker registry
             password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: run
-        run: docker run -d --name runner -e MAIN_SERVER_ADDRESS=${{ secrets.ULR }}  -e LIBRE_TRANSLATE_ADDRESS=http://libretranslate:5000  ${{ secrets.CONTAINER }} 
+        run: docker run --name runner -e MAIN_SERVER_ADDRESS=${{ secrets.ULR }}  -e LIBRE_TRANSLATE_ADDRESS=http://libretranslate:5000  ${{ secrets.CONTAINER }} 
       - run: sleep 360
      
           
