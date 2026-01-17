@@ -15,7 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        branche: ['1' ]
+        branche: ['1', '2','3','4','5','6','7','8','9','10' ]
+        bran: [ '1', '2', '3', '4' ]
       fail-fast: false
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
